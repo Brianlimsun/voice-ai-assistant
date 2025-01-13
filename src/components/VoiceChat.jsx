@@ -18,6 +18,7 @@ const PageContainer = styled.div`
 
   @media (max-width: 480px) {
     padding: 0;
+    height: 100%;
   }
 `;
 
@@ -32,8 +33,9 @@ const MainContent = styled.div`
   border-radius: 20px;
 
   @media (max-width: 500px) {
-    width: 400px;
+    width: 100%;
     height: 100vh;
+    max-height: 100vh;
     border-radius: 0;
     border: none;
   }
@@ -84,6 +86,7 @@ const ChatArea = styled.div`
   flex: 1;
   overflow-y: auto;
   scroll-behavior: smooth;
+  min-height: 0;
   
   &::-webkit-scrollbar {
     width: 4px;
@@ -104,17 +107,18 @@ const ChatArea = styled.div`
 `;
 
 const ControlsArea = styled.div`
-  padding: 1.5rem;
+  padding: 1rem;
   background: rgba(255, 255, 255, 0.02);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
   border-radius: 0 0 20px 20px;
 
   @media (max-width: 840px) {
     border-radius: 0;
+    padding: 0.75rem;
   }
 `;
 
