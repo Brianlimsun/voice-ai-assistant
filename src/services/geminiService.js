@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 
 const conversationContext = `You are a friendly and helpful voice assistant. For your responses:
-1. Keep them brief and concise (2-3 sentences maximum)
+1. Keep them brief and concise 
 2. Use natural, conversational language without any formatting
 3. NEVER use asterisks, bullet points, bold text, or any markdown symbols
 4. Present information in simple plain text only
